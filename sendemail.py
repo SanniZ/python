@@ -10,11 +10,11 @@ msg['From'] = Header("Byng", 'utf-8')
 msg['To'] = Header("Byng", 'utf-8')
 msg['Subject'] = Header("Send from Python", 'utf-8')
 
-from_addr = b'yingbinx.zeng@intel.com'
-password = b'intel@2018'
-to_addr = b'yingbinx.zeng@intel.com'
-smtp_server = b'smtp.intel.com'
-port = 25
+from_addr = input('From:')
+password = input('password:')
+to_addr = input('To:')
+smtp_server = input('SMTP Server:')
+port = input('Port:')
 
 
 #server = smtplib.SMTP(smtp_server, port)
